@@ -4,3 +4,4 @@ B&amp;H Company dotfiles. These are the files we use to have a coherent code qua
 
 - [Prettierrc](.prettierrc)
 - [Editorconfig](.editorconfig)
+- [Browserslistrc](.browserslistrc)
