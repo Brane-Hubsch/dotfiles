@@ -1,12 +1,14 @@
 {
-  "extends": "next/core-web-vitals",
-  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": ["next", "next/core-web-vitals", "prettier", "plugin:@typescript-eslint/recommended"],
   "rules": {
+    "prettier/prettier": "error",
     "no-console": "warn",
     "no-debugger": "warn",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
-      "warn", // or "error"
+      "warn", // or "warn"
       {
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_",
